@@ -13,12 +13,13 @@ parser.add_argument('-o', '--output',
                     help="Output filename/location")
 parser.add_argument('-r', '--reverse',
                     action='store_true',
-                    help="Right to Left sorting (e.g. for Manga)")
+                    help="Reverse the order of the pages")
 #parser.add_argument('-s', '--split',
 #                    action='store_true',
 #                    help="Seperate the front and back pages into separate files")
 parser.add_argument('-v', '--verbose',
-                    action='store_true')  # on/off flag
+                    action='store_true',
+                    help="Shows progress messages")
 args = parser.parse_args()
 
 # Input and output file paths
